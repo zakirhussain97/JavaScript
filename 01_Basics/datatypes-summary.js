@@ -43,3 +43,27 @@ const myFunction = function() {
 
 console.log(typeof heroes
 )
+
+//*************Memory***********//
+
+//Stack Memory(Primitive)
+//Heap Memory(Non Premitive)
+
+let myName = "Zakir"
+let anotherName = myName
+anotherName = "Parrey"
+
+console.log(myName)
+console.log(anotherName)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hassan@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
