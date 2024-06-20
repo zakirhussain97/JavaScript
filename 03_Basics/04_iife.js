@@ -1,6 +1,11 @@
-// Immediately Invoked Function Expression (IIFE)
+// Immediately Invoked Function Expressions (IIFE)
 
-function data() {
-    console.log(`DB connected`);
-}
-data()
+
+(function data(){
+    // named IIFE
+    console.log(`DB CONNECTED`);
+})();
+
+( (name) => {
+    console.log(`DB CONNECTED TWO ${name}`);
+} )('Zakir')
