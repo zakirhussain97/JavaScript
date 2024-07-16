@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM- Inserting and Removing Elements</title>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box">
+            Hey I am a box 1
+        </div>
+    </div>
+    <script>
+        // let div = document.createElement("div"); //creating a new div  
+        // div.innerHTML = "Hey I have been added"; //adding text to the div  
+        // div.setAttribute("class","created");  //adding class to the div  
+        // document.querySelector(".container").appendChild(div);  //appending the div to the container  
+
+        // let cont = document.querySelector(".container");
+        // cont.insertAdjacentHTML("beforebegin", "<b>Hey I have been added</b>");
+
+        document.querySelector(".container").classList.remove("red");
+        document.querySelector(".container").classList.add("blue");
+         </script>
+</body>
+</html>
